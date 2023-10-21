@@ -1,0 +1,6 @@
+# nginx container
+FROM nginx
+
+# Copy conf file
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.prod.conf /etc/nginx/conf.d/nginx.conf

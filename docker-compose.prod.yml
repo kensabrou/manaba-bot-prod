@@ -1,0 +1,31 @@
+version: "3.8"
+
+volumes:
+  static_volume:
+    driver: local
+
+services:
+  gunicorn:
+    container_name: gunicorn
+    env_file: ./django/.env
+    build: 
+      context: ./django
+      dockerfile: Dockerfile.prod
+    working_dir: /usr/src/app/core
+    volumes:
+      - static_volume:/public
+    ports:
+      - 8000:8000
+  nginx:
+    container_name: nginx
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.prod
+    volumes:
+      - static_volume:/public
+    ports:
+      - 3000:80
+    depends_on:
+      - gunicorn
+
+

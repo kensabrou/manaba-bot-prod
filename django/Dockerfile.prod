@@ -1,0 +1,32 @@
+FROM python:3.9.7-slim-buster
+ENV PYTHONUNBUFFERED=1
+ENV TZ='Asia/Tokyo'
+
+WORKDIR /usr/src/app
+COPY requirements.txt .
+COPY /core /usr/src/app/core 
+
+RUN apt -y update && \
+    apt upgrade -y && \
+    apt install -y curl default-libmysqlclient-dev gcc git gnupg libmariadb-dev mariadb-server mariadb-client python-dev wget unzip&& \
+    apt clean
+
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+RUN apt -y update
+RUN apt install -y google-chrome-stable
+
+RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
+RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+
+RUN export LANG=C.UTF-8
+RUN export LANGUAGE=en_US:
+RUN apt-get install -y fonts-ipafont
+
+RUN pip install --upgrade pip && pip uninstall django && pip install --no-cache-dir -r requirements.txt
+
+RUN mkdir /public
+VOLUME /public
+
+COPY entrypoint.sh /usr/src/app/core
+ENTRYPOINT [ "/usr/src/app/core/entrypoint.sh" ]
