@@ -8,7 +8,7 @@ COPY /core /usr/src/app/core
 
 RUN apt -y update && \
     apt upgrade -y && \
-    apt install -y curl default-libmysqlclient-dev gcc git gnupg libmariadb-dev mariadb-server mariadb-client python-dev wget unzip&& \
+    apt install -y curl default-libmysqlclient-dev gcc git gnupg libmariadb-dev mariadb-server mariadb-client python-dev wget vim unzip && \
     apt clean
 
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -

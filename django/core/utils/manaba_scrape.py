@@ -51,18 +51,18 @@ def scrape(id, password)-> list:
 
     browser.implicitly_wait(10)
 
-    browser.get('https://ct.ritsumei.ac.jp/ct/home')
-    time.sleep(1)
-
-    # ログイン
-    form_dict = {'/html/body/div/div[2]/div[1]/form/p[1]/input':id,
-                '/html/body/div/div[2]/div[1]/form/p[2]/input':password}
-    input_element(browser, form_dict)
-    button_click(browser, '/html/body/div/div[2]/div[1]/form/p[3]/input')
-    time.sleep(3)
-    print('ログイン')
-    # コース一覧へ遷移
     try:
+        browser.get('https://ct.ritsumei.ac.jp/ct/home')
+        time.sleep(1)
+
+        # ログイン
+        form_dict = {'/html/body/div/div[2]/div[1]/form/p[1]/input':id,
+                    '/html/body/div/div[2]/div[1]/form/p[2]/input':password}
+        input_element(browser, form_dict)
+        button_click(browser, '/html/body/div/div[2]/div[1]/form/p[3]/input')
+        time.sleep(3)
+
+        # コース一覧へ遷移
         button_click(browser, '/html/body/div[2]/div[1]/div[6]/div[2]/a/img')
         time.sleep(5)
     except TimeoutException:
