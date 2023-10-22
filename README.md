@@ -1,11 +1,22 @@
 # manaba bot
 これは**manaba**を利用する学生に向けて作成したプロジェクトです。<br>
 manaba専用のLINEボットを使用することで講義ごとの未提出課題・レポート情報をLINEから確認できます。<br>
-<LINE画像>
+
+### LINEチャット画面
+<p>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/323e7ae7-1aee-4a98-9ebe-0612a166fbdd" width=320 height=400>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/2926949f-4e07-438f-a1c7-ab80217c919c" width=320 height=400>
+</p>
+
+### manabaのID, パスワードを登録
+<p>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/d3d7eaa9-cc9c-4a16-a6da-e65d1731e7ac" width=640 height=250>
+</p>
 
 # 友達追加
 以下のQRまたはIDから友達追加できます。<br>
-<QR画像> <br>
+![673ndnlk](https://github.com/kensabrou/manaba-bot-prod/assets/86251649/b9eef0da-d21f-4557-b5dc-eecda10dc057)
+ <br>
 ID: **@673ndnlk**
 
 # 使用技術
