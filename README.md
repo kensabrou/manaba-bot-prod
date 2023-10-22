@@ -1,17 +1,32 @@
 # manaba bot
-これは**manaba**を利用する学生に向けて作成したプロジェクトです。  
-manaba専用のLINEボットを作成することで講義ごとの未提出課題・レポート情報をLINEから確認できます。
+これは**manaba**を利用する学生に向けて作成したプロジェクトです。<br>
+manaba専用のLINEボットを使用することで講義ごとの未提出課題・レポート情報をLINEから確認できます。<br>
+<LINE画像>
 
-このプロジェクトを使用する際にはプロジェクトのルートに以下のような.envファイルを作成する必要があります。  
+# 友達追加
+以下のQRまたはIDから友達追加できます。<br>
+<QR画像> <br>
+ID: **@673ndnlk**
 
-```:.env
-ACCESSTOKEN= ...
-WEB_HOOK_URL = ...
+# 使用技術
+- Python 3.9.7
+- Django 4.26
+- MySQL 8.0.33
+- Nginx
+- Gunicorn
+- AWS
+  - VPC
+  - EC2
+  - S3
+  - RDS
+  - Route53
+- Docker/Docker-compose
 
-POSTGRES_DB = ...
-POSTGRES_USER = ...
-POSTGRES_PASSWORD = ...
-```
+# AWS構成図
+<AWS構成画像>
 
-現段階ではngrokを使用してデプロイしています。  
-環境に合わせて適宜変更する必要があることに注意してください。
+# 機能一覧
+- ユーザー登録（自動ログイン時使用）
+- 課題確認
+  - 自動ログイン
+  - スクレイピング
