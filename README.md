@@ -40,7 +40,7 @@ ID: **@673ndnlk**
 - Docker/Docker-compose
 
 # AWS構成図
-<img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/ceddeb41-4c7f-45e0-8c7e-3c78f897d796" width=650 height=550>
+<img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/712443e2-bbae-420a-8d23-e47e73774102" width=650 height=550>
 
 
 # 機能一覧
