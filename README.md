@@ -2,7 +2,7 @@
 
 >[!WARNING]
 >**manaba+Rのログインに多要素認証が採用されたため現在は使用できません。** <br>
->**現在はID、パスワード共にtestで登録されるようになっています。**
+>**現在、ユーザ登録できません。**
 
 これは**manaba**を利用する学生に向けて作成したプロジェクトです。<br>
 立命館大学のポータルサイトmanaba+Rはメールでの通知にしか対応しておらず、使いにくかったので作成しました。<br>
@@ -40,7 +40,8 @@ ID: **@673ndnlk**
 - Docker/Docker-compose
 
 # AWS構成図
-<AWS構成画像>
+<img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/ceddeb41-4c7f-45e0-8c7e-3c78f897d796" width=650 height=550>
+
 
 # 機能一覧
 - ユーザー登録（自動ログイン時使用）
