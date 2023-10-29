@@ -10,19 +10,20 @@ manaba専用のLINEボットを使用することで講義ごとの未提出課�
 
 ### LINEチャット画面
 <p>
-  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/7aa7e2f5-7fc1-40e0-a169-dcb4e32b03f7" width=320 height=400>
-  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/56316337-c070-4efb-b0cf-633fafcb06d0" width=320 height=400>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/c20458ef-1a0d-48c8-a0bf-62589e183653" width=320 height=400>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/26f2c2d0-88b2-4d71-9e3e-b31239b737ed" width=320 height=400>
 </p>
 
 ### manabaのID, パスワードを登録
 <p>
-  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/d3d7eaa9-cc9c-4a16-a6da-e65d1731e7ac" width=640 height=250>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/5df9742c-a827-495b-bda8-550a022d1fc7" width=640 height=250>
 </p>
 
 # 友達追加
 以下のQRまたはIDから友達追加できます。<br>
-![673ndnlk](https://github.com/kensabrou/manaba-bot-prod/assets/86251649/b9eef0da-d21f-4557-b5dc-eecda10dc057)
- <br>
+![673ndnlk](https://github.com/kensabrou/manaba-bot-prod/assets/86251649/a8de84fb-6505-4d8e-b350-40ec3d42158a)
+<br>
+
 ID: **@673ndnlk**
 
 # 使用技術
@@ -40,8 +41,7 @@ ID: **@673ndnlk**
 - Docker/Docker-compose
 
 # AWS構成図
-<img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/712443e2-bbae-420a-8d23-e47e73774102" width=650 height=550>
-
+<img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/658e6841-62e5-4b5e-a8ff-f5489ac2917f" width=650 height=550>
 
 # 機能一覧
 - ユーザー登録（自動ログイン時使用）
