@@ -10,7 +10,7 @@ manaba専用のLINEボットを使用することで講義ごとの未提出課�
 
 ### LINEチャット画面
 <p>
-  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/c20458ef-1a0d-48c8-a0bf-62589e183653" width=320 height=400>
+  <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/03341424-c842-447f-ac2f-7e1ab6065286" width=320 height=400>
   <img src="https://github.com/kensabrou/manaba-bot-prod/assets/86251649/26f2c2d0-88b2-4d71-9e3e-b31239b737ed" width=320 height=400>
 </p>
 
